@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>訂閱方案</title>
+  <script type="module" crossorigin src="/week5/assets/main-6364ddb8.js"></script>
+  <link rel="stylesheet" href="/week5/assets/main-e6171e17.css">
+</head>
+<body class="bg-cus">
+    <div class="container nav-posi-fixed top-0 start-50 border-bottom ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-cus p-0  position-relative-992">
+            <a class="navbar-brand py-lg-5 py-8 pe-lg-9 m-lg-0 " href="index.html">Vivre</a>
+            <button class=" navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="mx-auto bg-cus collapse navbar-collapse justify-content-between position-absolute-992 end-0 bottom-0" id="navbarSupportedContent">
+            <form class="position-relative mt-3 m-lg-0">
+                <input class="form-control" type="search" placeholder="搜尋文章" aria-label="Search">
+                <img class="position-absolute end-0 top-50 translate-middle img-sm" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABTRJREFUeF7tnc1OGzEQx22H92h4ksJDQHuDHNuoUkV6B+4FVarSHoEbhYcAnqT7IMSuZpOFbZTE47HXnrCzEuJrbe/+f54Zj9feaCVHUQV00dalcSUACncCASAACitQuHmxAAFQWIHCzYsFCIDCChRuXixAABRWoHDzYgF9BvDx99ehteYINHBa78F37dRQqfqrmv9dVcbNf7bKPQ2sqW6/fH8srFuy5rNbwKvo+nghNOVmKq3Uo7b6ZtthZAPw8ee3PWvcVYTo60BVSrnru/HlOYVk6TKdA+hQ+GXtKmP1aNssolMAB78mD9qp2rfnOpxWj/efL/ZztRfbTicAwM/P3OAqt/gtMSpjZvu3n37UwZvzkRzAwuU8MLjpyil3fj++vGZwLWsvISmAg+nJsVYaAi2Xg32ATgYgoufXIhlrnmpqO88VuA5wY/XvzzvDmbFDo/R7p+p4Mv87/mAdnJMAmI/tB3/xmsCZ7swYexPqp1t5xFlAe2xjQhIAIaMdGKUM9GwUKvyy2ADC2cGpUwoSOsxR3Y0vdjEn5jwnGkCQ+MqNUgfFw+nJqVIaZQ0ch6hRAAL8fqd+eOECYeTljQ/G6n1OyVoUAGTv71T8xl0EQGDlisgAsEPOnD0OOxhwHbhCatwgAzicTmDUs9Hkc4rfCIDsGGysgAQAc5Naqes/44sRtWfElMO4xhKdY9U9kQB8mE6ufMO/kjeIcUUlO0gbBAmAz/1wuDlEJ2HhhqgA3CYXYcxsNzbRinFBUBZjBSWttLm/YAAY/383vgiuN1bwVeX9scCdlX6SFiyUz7Q5uJ8Ghi9L5nCtyQFwGmP7MnUOUxPBAHxmzcGvvmTH84UAax8ObSUA3wiIQwBemp7YNE1efCQUbAGH08nGERCXAIwcCQmALkY/7Tq5dxiKBWycAxIXFNalggFIEA4T2Hf2mwbgSxrfZB7A4aaaXrcNSWOwBfiyS1hWzuXht2/IzCFpDAawLZNcviwYrITDgCEYAFy4LxBzcEM+98MhCwYtSQAwbqjkUnFM74eFYaVnQskAMDdYsof5LJSL+6EDQC8/z9/LMJ2Dg4skP5AJXX2Q0xVhxOfU+8kW8AIBtwMmy8JYzOhsccPFVmskWxWBnW9vNdjp6jhsz+eUo0S7oEArgNM72Szhm25o9zpOD4uSAQhYk1m3CQFQm9l57KoJyvJ0jvvGSHnAsi8LhQDWQN1oTdyg0VxylnjkmwFt/z8JAKgQGwRXXFwNo3kNwbotSlqpd9h9AB4BWEFIBqCeouC3SW8dCzYQkgJoWQJqs0SIqXZwLgsIyQEwgQAbtL27ZSAWlQ7MnQB4hQCvosHt30rUw+t8A+KItQOsFRaF0BmAl2QNPW8Ui+D/eafAkVkxCJ0DWJo7OkW6hgAa6/cbbwOEbAAatwQ7351xR1arYcTLPNBZNXcIWQGsSuBm1uzBawjgfwsozSvLFtMX89eWaefq15RRHqJwhlAUQICfiT6VK4TeACAMj7ME5l4B4AihdwC4QeglAE4QeguAC4ReA+AAofcASkMQAIsMo1SeIABaKV4JCAJgKcfODUEArJjkyAlBAKyZZcoFQQBsmObLAUEAeOZZQyBQluQLAMRENxICaW+cAEAAQCRrJPGhXgGABLABAll8ARAgfnPqkjuKEl8AEAA0lgCfEJLio1LEBREhpComAFIpSaxHABCFS1VMAKRSkliPACAKl6qYAEilJLEeAUAULlUxAZBKSWI9AoAoXKpiAiCVksR6BABRuFTFBEAqJYn1/AMTpoOObHPkHgAAAABJRU5ErkJggg==" alt="">
+            </form>
+            <div class="d-lg-flex align-items-center bg-cus">
+                <ul class="navbar-nav me-auto mb-7 my-lg-0 ">
+                  <li class="nav-item me-lg-8 mb-4 my-lg-0 mt-4  bg-cus">
+                    <a class="nav-link fw-bold p-6 py-lg-2 px-lg-8 fs-7" aria-current="page" href="../pages/content.html">所有文章</a>
+                  </li>
+                  <li class="nav-item me-lg-8 mb-4 mb-lg-0">
+                    <a class="nav-link fw-bold p-6 py-lg-2 px-lg-8 fs-7" href="subscription.html">訂閱方案</a>
+                  </li>
+                  <li class="nav-item me-lg-8 mb-lg-0">
+                    <a class="nav-link fw-bold p-6 py-lg-2 px-lg-8 fs-7" href="about.html">關於我們</a>
+                  </li>
+                </ul>
+                <div>
+                  <a type="button" class="btn btn-accent-200 w-100 rounded-3 text-neutral fw-bold py-6 py-lg-3 px-lg-4" href="login.html">登入/註冊</a>
+                </div>
+          </div>
+        </div>
+</nav>    </div>
+    <main class="container">
+        <article  class="mt-19 pt-lg-18 mt-lg-17 pb-10 pb-lg-18">
+            <div class="py-6 d-flex mb-2 mb-lg-8">
+                <h4 class="fs-7 mb-0 fw-semibold ">首頁</h4>
+                <h4 class="fs-7 mb-0 fw-semibold mx-14">/</h4>
+                <h4 class="fs-7 mb-0 fw-semibold text-accent-200">訂閱方案</h4>
+            </div>
+            <h1 class="fs-3 fw-bold mb-7 mb-lg-10">訂閱方案</h1>
+            <div class="row justify-content-center mb-4 mb-lg-7">
+                <div class="col-lg-2 col-6 pe-0">
+                    <button class="btn btn-outline-accent-200 border-0 rounded-0 text-neutral-400  w-100">年繳</button>
+                </div>
+                <div class="col-lg-2 col-6 ps-0">
+                    <button class="btn btn-outline-accent-200 border-0 rounded-0 text-neutral-400 w-100 ">月繳</button>
+                </div>
+            </div>
+
+            <div class="row">  
+
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="bg-neutral p-4 p-lg-7 d-flex flex-column h-100 border-cus-300 border-1 border rounded-2">
+                        <div class="pb-9 pb-lg-10">
+                            <h4 class="fs-6 fw-bolder mb-3 text-center">輕量型</h4>
+                            <div class="mb-lg-7 d-flex align-items-center justify-content-center">
+                                <h5 class="mb-0 fs-9 fw-bolder me-3 text-neutral-700">NT 99</h5>
+                                <h5 class="mb-0 text-neutral-800 fs-5">/月</h5>
+                            </div>
+                        </div>
+                        <div class="mb-10 ">
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">每月最新文章無限閱讀</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">專屬會員限定內容</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">定期電子報</h5>
+                            </div>
+                        </div>  
+                        
+                        <div class="mt-auto">
+                            <a class="w-100 btn btn-neutral-100 rounded-pill py-6 " href="Checkout.html">我要訂閱 <img class="img-sm ms-6" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAl1JREFUeF7t3DFOw0AUhOHdm3AUjhJqgkSBJQosgqCDDvpwE64C9yAyckQKUJSY9aJ5MzupE7/k//zixnJOfkELZOh0D08GAJ8EBjAAuAB4vDfAAOAC4PHeAAOAC4DHewMMAC4AHu8NMAC4AHi8N8AA4ALg8d4AA5QXOO/6dR6G95enh7vyo2A/SbsB2/gpLbb5hmHFikAJ8CP+7gQmRaAD2BufGIEK4GB8UgQagOXVzW3KeTXpkkn0d0QDcHm9OvncbNYppVMlBBqAMboiAhWAIgIdgBoCJYASAi2ACgI1gAICPQA7ggQAM4IMACuCFAAjghwAG4IkABOCLAALgjQAA4I8QHSEJgAiIzQDEBWhKYCICM0BRENoEiASQrMAURBmAyy7fph0l4LKmyrf8mKAkhOjIoIBSgAq3hBsgFKASggGmAGQUzp7frx/nXGI+Y+rae4i/F27RvzxUN6AgtO3VnwDgONXASj4DaE+suz6t6l3XNc883cRZv8Fhar5xy+Djt/0BkSI3yxAlPhNAkSK3xxAtPhNAUSM3wxA1PhNAESOLw8QPb40AEN8WQCW+JIATPHlANjiSwEwxpcBYI0vAcAcnx6APT41gEJ8WgCV+JQASvHpANTiUwFcdP1iSGl8ZtzR13/cvXB0aOEbqO6KmPLkRKb4VBuwO8EOIbDFpwQYv/Q+BMb4tAC/EVjjUwPsEHLOH3NvES+8flb5GNVFuMovDnYQA4BBDGAAcAHweG+AAcAFwOO9AQYAFwCP9wYYAFwAPN4bYABwAfB4b4ABwAXA470BBgAXAI//Agf4w3DIzE2wAAAAAElFTkSuQmCC" alt="arrow_forward"></a>
+                        </div>
+
+                    </div>
+                
+                </div>
+    
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <div class="bg-neutral p-4 p-lg-7 d-flex flex-column h-100 border-cus-300 border-1 border rounded-2">
+                        <div class="pb-9 pb-lg-10">
+                            <h4 class="fs-6 fw-bolder mb-3 text-center">玩咖型</h4>
+                            <div class="mb-lg-7 d-flex align-items-center justify-content-center">
+                                <h5 class="mb-0 fs-9 fw-bolder me-3 text-neutral-700">NT 159</h5>
+                                <h5 class="mb-0 text-neutral-800 fs-5">/月</h5>
+                            </div>
+                        </div>
+                        <div class="mb-10">
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">每月最新文章無限閱讀</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">專屬會員限定內容</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">定期電子報</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">年度精選禮物</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="../assets/images/check_box_24dp_6C757D_FILL1_wght400_GRAD0_opsz24.png" alt="">
+                                <h5 class="mb-0 text-neutral-700 fw-bolder">24/7 優先客戶服務</h5>
+                            </div>
+                        </div>
+                
+                        <div class="mt-auto">
+                            <a class="w-100 btn btn-neutral-100 rounded-pill py-6" href="Checkout.html">我要訂閱 <img class="img-sm ms-6"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAl1JREFUeF7t3DFOw0AUhOHdm3AUjhJqgkSBJQosgqCDDvpwE64C9yAyckQKUJSY9aJ5MzupE7/k//zixnJOfkELZOh0D08GAJ8EBjAAuAB4vDfAAOAC4PHeAAOAC4DHewMMAC4AHu8NMAC4AHi8N8AA4ALg8d4AA5QXOO/6dR6G95enh7vyo2A/SbsB2/gpLbb5hmHFikAJ8CP+7gQmRaAD2BufGIEK4GB8UgQagOXVzW3KeTXpkkn0d0QDcHm9OvncbNYppVMlBBqAMboiAhWAIgIdgBoCJYASAi2ACgI1gAICPQA7ggQAM4IMACuCFAAjghwAG4IkABOCLAALgjQAA4I8QHSEJgAiIzQDEBWhKYCICM0BRENoEiASQrMAURBmAyy7fph0l4LKmyrf8mKAkhOjIoIBSgAq3hBsgFKASggGmAGQUzp7frx/nXGI+Y+rae4i/F27RvzxUN6AgtO3VnwDgONXASj4DaE+suz6t6l3XNc883cRZv8Fhar5xy+Djt/0BkSI3yxAlPhNAkSK3xxAtPhNAUSM3wxA1PhNAESOLw8QPb40AEN8WQCW+JIATPHlANjiSwEwxpcBYI0vAcAcnx6APT41gEJ8WgCV+JQASvHpANTiUwFcdP1iSGl8ZtzR13/cvXB0aOEbqO6KmPLkRKb4VBuwO8EOIbDFpwQYv/Q+BMb4tAC/EVjjUwPsEHLOH3NvES+8flb5GNVFuMovDnYQA4BBDGAAcAHweG+AAcAFwOO9AQYAFwCP9wYYAFwAPN4bYABwAfB4b4ABwAXA470BBgAXAI//Agf4w3DIzE2wAAAAAElFTkSuQmCC"
+                                    alt="arrow_forward"></a>
+                        </div>
+                
+                    </div>
+                
+                </div>
+    
+                <div class="col-lg-4">
+                    <div class="bg-neutral p-4 p-lg-7 border-accent-200 border-2 border rounded-2">
+                        <div class="pb-9 pb-lg-10">
+                            <h4 class="fs-6 fw-bolder mb-3 text-center">家庭型</h4>
+                            <div class=" mb-3 d-flex align-items-center justify-content-center">
+                                <h5 class="mb-0 fs-9 fw-bolder me-3 text-accent-200 ">NT 599</h5>
+                                <h5 class="mb-0 text-neutral-800 fs-5">/月</h5>
+                            </div>
+                            <h5 class="mb-0 text-neutral-300 fs-5 fw-bolder text-center">NT 899</h5>
+                        </div>
+                        <div class="mb-10">
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">每月最新文章無限閱讀</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">專屬會員限定內容</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">定期電子報</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">年度精選禮物</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">24/7 優先客戶服務</h5>
+                            </div>
+                            <div class="mb-20 mb-lg-4 d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">為每個成員量身打造專屬行程</h5>
+                            </div>
+                            <div class="d-flex align-items-center ">
+                                <img class="img-sm me-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAA4FJREFUeF7tnVFu00AURZ9D90HYQaUGCSI+nJW0WUmblTSspP5AAYlUYgfNQmiMp4pRlCb2vPEk9419+WXGzz5n7hjs8SQT/oESyKDVWVwoADwIKIACwATA5ZkACgATAJdnAigATABcngmgADABcHkmIHUB11/y8dVIbqWUXDLJwddz9vKlyCYrZVNmsnndyuLPr2LTpWinBEym+X1V/KHLCaTc902GyHK9Khah1xEsYPI1fxrCiPcCW0qx/lnMvNoeNAoS8Hma35UijyEFe9znISQJagG7Of+lxyCDLu1tOhrJfP2jKDQHUAsY+rzfAledArWAm2n+mIncaSwPpm3AvSBEwEt15x8PBqriQt009LwqPim66N+IVVNQqSkwtLbVjVg1qFWNHUwKaB5SFACOHAVQAJgAuDwTQAFgAuDyTAAFgAmAyzMBFAAmAC7PBCgFZCLz6t3Gx6pblDd7FKAQ4OD/XhXL3SOWKK9XKcBTwD78ukuMdx0U4CHgGPxYEiigRUAT/BgSKKBBgA/8unvomz8KOCFAA3/yLc9lK08es9m7JhRwhNql4LvSFHAg4JLwKQAMnwL2BFx65Nel05mCSimqtaVuFVmURwD7gx8FP50E7BYw/V/aHlECEn4aAg5Wj8WUgIZvX8CJpXsxJFiAb1tAy7rJLhKswLcrwHPRaogES/DNCnCLVl+3MvP5nkojwRp8swLcicWWYBG+aQExJViFb15ADAmW4SchoIsE6/CTERAk4UrGvh/AdXmeH/IOYL9POs+ClDdmXzBI+EkloAaq+ddRmwQ0/CQFaKejUxIswE9WQFcJVuAnLSBUgiX4yQvQSrAGvxcCfCVYhN8bAW0SrMLvlYBTEizD752AQwnW4fdSQC1hJLJIYZOopB5FtP3PNsW/pwCwNQqgADABcHkmgALABMDlmQAKABMAl2cCKABMAFyeCei7gJtpzo1bGySfPwHctv4k/lJk+bwq5poQhmzcGmVXEc1JJtT2/Jt3c/v6huEwkpnv6r36KOoEuI78AYf3EjTrVvd7BwlwBwjdzCKh6cT/VD2/ADp2wGAB7mAxNjjyv0qzLdXzfpQE1Adx94QPI7nPShkP4Ud96p+xch+Z/93Kd5/PrpqGTqcEmB2TCZ0YBYBlUQAFgAmAyzMBFAAmAC7PBFAAmAC4PBNAAWAC4PJMAAWACYDL/wOtkIp/mf4lcQAAAABJRU5ErkJggg==" alt="">
+                                <h5 class="mb-0 text-neutral-500 fw-bolder">最多 5 個家庭成員共享</h5>
+                            </div>
+                        </div>
+                
+                        <div>
+                            <a class=" w-100 btn btn-accent-200 rounded-pill text-neutral py-6" href="Checkout.html" >我要訂閱 <img class="img-sm ms-6"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAj1JREFUeF7t3NFNAzEQhGG7E0qhFKiEUAl0QitQySaWchJCRLn4LM3O7PCcyyb/d5vwYKU3/0ELdOh0D28GAN8EBjAAuAB4vDfAAOAC4PHeAAOAC4DHewMMAC4AHu8NMAC4AHi8N8AA4ALg8d4AA8wXiIiP1tp37/19/lmwV9JuwDX+yzXfiRWBEuBP/O0WpkSgA7gRnxaBCuBOfEoEGoCIeLsUPu38yqT5OGICeGqtjf96npUQaABG9IiQQ6ACUESgA1BDoARQQqAFUEGgBlBAoAdgR5AAYEaQAWBFkAJgRJADYEOQBGBCkAVgQZAGYECQB8iOUAIgM0IZgKwIpQAyIpQDyIZQEiATQlmALAiHAS7HRWLnKQWVhy098mKAudtiGYIB5gDGVUsQDDAPsATBAMcAXnvvn0eewgDz9Q7HH6MNMAewJL4BwPGXAMy9hzxXRcTXAyeul935W4HDH0F5Uj7+StDxS29AhvhlAbLELwmQKX45gGzxSwFkjF8GIGv8EgCZ48sDZI8vDcAQXxaAJb4kAFN8OQC2+FIAjPFlAFjjSwAwx6cHYI9PDaAQnxZAJT4lgFJ8OgC1+FQAETF+pHX8Ztyev+WnF/YMnXkM1amInb+cSBOfagO2u+sOAlV8SoDxom8g0MWnBfgHgTI+NcAvhJ+jR8RnvjxXXUP1JbzqTWd6HgOANQxgAHAB8HhvgAHABcDjvQEGABcAj/cGGABcADzeG2AAcAHweG+AAcAFwOO9AQYAFwCPPwNQHkBwHBtP6wAAAABJRU5ErkJggg=="
+                                    alt="arrow_forward"></a>
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+            </div>
+        </article>
+
+    </main>
+
+
+    <!-- footer -->
+    <main class="container">
+        <article class=" border-top ">
+            <footer class="container">
+    <main class="py-8 py-lg-4">
+        <h4 class="text-center fs-7 text-cus-400 m-0">©Vivre 2024 All right Reserved</h4>
+    </main>
+</footer>        </article>
+    </main>
+    </body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+</html>

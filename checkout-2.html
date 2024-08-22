@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>結帳</title>
+  <script type="module" crossorigin src="/week5/assets/main-6364ddb8.js"></script>
+  <link rel="stylesheet" href="/week5/assets/main-e6171e17.css">
+</head>
+
+<body class="bg-cus">
+    <div class="container nav-posi-fixed top-0 start-50 border-bottom ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-cus p-0  position-relative-992">
+            <a class="navbar-brand py-lg-5 py-8 pe-lg-9 m-lg-0 " href="index.html">Vivre</a>
+            <button class=" navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="mx-auto bg-cus collapse navbar-collapse justify-content-between position-absolute-992 end-0 bottom-0" id="navbarSupportedContent">
+            <form class="position-relative mt-3 m-lg-0">
+                <input class="form-control" type="search" placeholder="搜尋文章" aria-label="Search">
+                <img class="position-absolute end-0 top-50 translate-middle img-sm" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAABTRJREFUeF7tnc1OGzEQx22H92h4ksJDQHuDHNuoUkV6B+4FVarSHoEbhYcAnqT7IMSuZpOFbZTE47HXnrCzEuJrbe/+f54Zj9feaCVHUQV00dalcSUACncCASAACitQuHmxAAFQWIHCzYsFCIDCChRuXixAABRWoHDzYgF9BvDx99ehteYINHBa78F37dRQqfqrmv9dVcbNf7bKPQ2sqW6/fH8srFuy5rNbwKvo+nghNOVmKq3Uo7b6ZtthZAPw8ee3PWvcVYTo60BVSrnru/HlOYVk6TKdA+hQ+GXtKmP1aNssolMAB78mD9qp2rfnOpxWj/efL/ZztRfbTicAwM/P3OAqt/gtMSpjZvu3n37UwZvzkRzAwuU8MLjpyil3fj++vGZwLWsvISmAg+nJsVYaAi2Xg32ATgYgoufXIhlrnmpqO88VuA5wY/XvzzvDmbFDo/R7p+p4Mv87/mAdnJMAmI/tB3/xmsCZ7swYexPqp1t5xFlAe2xjQhIAIaMdGKUM9GwUKvyy2ADC2cGpUwoSOsxR3Y0vdjEn5jwnGkCQ+MqNUgfFw+nJqVIaZQ0ch6hRAAL8fqd+eOECYeTljQ/G6n1OyVoUAGTv71T8xl0EQGDlisgAsEPOnD0OOxhwHbhCatwgAzicTmDUs9Hkc4rfCIDsGGysgAQAc5Naqes/44sRtWfElMO4xhKdY9U9kQB8mE6ufMO/kjeIcUUlO0gbBAmAz/1wuDlEJ2HhhqgA3CYXYcxsNzbRinFBUBZjBSWttLm/YAAY/383vgiuN1bwVeX9scCdlX6SFiyUz7Q5uJ8Ghi9L5nCtyQFwGmP7MnUOUxPBAHxmzcGvvmTH84UAax8ObSUA3wiIQwBemp7YNE1efCQUbAGH08nGERCXAIwcCQmALkY/7Tq5dxiKBWycAxIXFNalggFIEA4T2Hf2mwbgSxrfZB7A4aaaXrcNSWOwBfiyS1hWzuXht2/IzCFpDAawLZNcviwYrITDgCEYAFy4LxBzcEM+98MhCwYtSQAwbqjkUnFM74eFYaVnQskAMDdYsof5LJSL+6EDQC8/z9/LMJ2Dg4skP5AJXX2Q0xVhxOfU+8kW8AIBtwMmy8JYzOhsccPFVmskWxWBnW9vNdjp6jhsz+eUo0S7oEArgNM72Szhm25o9zpOD4uSAQhYk1m3CQFQm9l57KoJyvJ0jvvGSHnAsi8LhQDWQN1oTdyg0VxylnjkmwFt/z8JAKgQGwRXXFwNo3kNwbotSlqpd9h9AB4BWEFIBqCeouC3SW8dCzYQkgJoWQJqs0SIqXZwLgsIyQEwgQAbtL27ZSAWlQ7MnQB4hQCvosHt30rUw+t8A+KItQOsFRaF0BmAl2QNPW8Ui+D/eafAkVkxCJ0DWJo7OkW6hgAa6/cbbwOEbAAatwQ7351xR1arYcTLPNBZNXcIWQGsSuBm1uzBawjgfwsozSvLFtMX89eWaefq15RRHqJwhlAUQICfiT6VK4TeACAMj7ME5l4B4AihdwC4QeglAE4QeguAC4ReA+AAofcASkMQAIsMo1SeIABaKV4JCAJgKcfODUEArJjkyAlBAKyZZcoFQQBsmObLAUEAeOZZQyBQluQLAMRENxICaW+cAEAAQCRrJPGhXgGABLABAll8ARAgfnPqkjuKEl8AEAA0lgCfEJLio1LEBREhpComAFIpSaxHABCFS1VMAKRSkliPACAKl6qYAEilJLEeAUAULlUxAZBKSWI9AoAoXKpiAiCVksR6BABRuFTFBEAqJYn1/AMTpoOObHPkHgAAAABJRU5ErkJggg==" alt="">
+            </form>
+            <div class="d-lg-flex align-items-center bg-cus">
+                <ul class="navbar-nav me-auto mb-7 my-lg-0 ">
+                  <li class="nav-item me-lg-8 mb-4 my-lg-0 mt-4  bg-cus">
+                    <a class="nav-link fw-bold p-6 py-lg-2 px-lg-8 fs-7" aria-current="page" href="../pages/content.html">所有文章</a>
+                  </li>
+                  <li class="nav-item me-lg-8 mb-4 mb-lg-0">
+                    <a class="nav-link fw-bold p-6 py-lg-2 px-lg-8 fs-7" href="subscription.html">訂閱方案</a>
+                  </li>
+                  <li class="nav-item me-lg-8 mb-lg-0">
+                    <a class="nav-link fw-bold p-6 py-lg-2 px-lg-8 fs-7" href="about.html">關於我們</a>
+                  </li>
+                </ul>
+                <div>
+                  <a type="button" class="btn btn-accent-200 w-100 rounded-3 text-neutral fw-bold py-6 py-lg-3 px-lg-4" href="login.html">登入/註冊</a>
+                </div>
+          </div>
+        </div>
+</nav>    </div>
+
+    <main class="container">
+        <article class="mt-19 pt-lg-18 mt-lg-17 pb-10 pb-lg-18">
+            <div class="d-flex mb-4 mb-lg-7 justify-content-center align-items-center">
+                <img class="img-sm img-big" src="data:image/png;base64,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" alt="task_alt">
+                <h1 class="fw-bold fs-3 text-accent-200 mb-0 ms-6 fs-lg-1">付款成功</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="bg-neutral mb-4 border border-1 border-accent-200 rounded-2  ">
+                        <div class="p-4 p-lg-7">
+                            <h2 class="fw-bold fs-5 mb-4 mb-lg-7 fs-lg-4  pb-4 border-bottom">訂購資訊</h2>
+                            <div class="d-flex align-items-center justify-content-between mb-2 mb-lg-6">
+                                <h5 class="fs-6 fs-lg-4 mb-0 fw-bold">輕量型方案</h5>
+                                <h5 class="fs-6 fs-lg-4 mb-0 fw-bold">NT 1,188</h5>
+                            </div>
+                            <h6 class="text-neutral-800 fs-6 fw-bolder mb-4 mb-lg-7">年繳</h5>
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <h5 class="fs-6 fw-bolder text-neutral-800 mb-0">開始日</h5>
+                                <time class="fs-6 fw-bolder text-neutral-400 mb-0">2024 / 5 / 1</time>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between pb-4 border-bottom mb-4 mb-lg-7">
+                                <h5 class="fs-6 fw-bolder text-neutral-800 mb-0">終止日</h5>
+                                <time class="fs-6 fw-bolder text-neutral-400 mb-0">2025 / 5 / 1</time>
+                            </div>
+                           
+                            <a class="w-100 btn btn-accent-200 rounded-pill py-6 py-lg-3 text-neutral" href="content-2.html">瀏覽文章<img
+                                    class="img-sm ms-6"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAAAXNSR0IArs4c6QAAAj1JREFUeF7t3NFNAzEQhGG7E0qhFKiEUAl0QitQySaWchJCRLn4LM3O7PCcyyb/d5vwYKU3/0ELdOh0D28GAN8EBjAAuAB4vDfAAOAC4PHeAAOAC4DHewMMAC4AHu8NMAC4AHi8N8AA4ALg8d4AA8wXiIiP1tp37/19/lmwV9JuwDX+yzXfiRWBEuBP/O0WpkSgA7gRnxaBCuBOfEoEGoCIeLsUPu38yqT5OGICeGqtjf96npUQaABG9IiQQ6ACUESgA1BDoARQQqAFUEGgBlBAoAdgR5AAYEaQAWBFkAJgRJADYEOQBGBCkAVgQZAGYECQB8iOUAIgM0IZgKwIpQAyIpQDyIZQEiATQlmALAiHAS7HRWLnKQWVhy098mKAudtiGYIB5gDGVUsQDDAPsATBAMcAXnvvn0eewgDz9Q7HH6MNMAewJL4BwPGXAMy9hzxXRcTXAyeul935W4HDH0F5Uj7+StDxS29AhvhlAbLELwmQKX45gGzxSwFkjF8GIGv8EgCZ48sDZI8vDcAQXxaAJb4kAFN8OQC2+FIAjPFlAFjjSwAwx6cHYI9PDaAQnxZAJT4lgFJ8OgC1+FQAETF+pHX8Ztyev+WnF/YMnXkM1amInb+cSBOfagO2u+sOAlV8SoDxom8g0MWnBfgHgTI+NcAvhJ+jR8RnvjxXXUP1JbzqTWd6HgOANQxgAHAB8HhvgAHABcDjvQEGABcAj/cGGABcADzeG2AAcAHweG+AAcAFwOO9AQYAFwCPPwNQHkBwHBtP6wAAAABJRU5ErkJggg=="
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+
+    </main>
+
+    <!-- footer -->
+    <main class="container">
+        <article class=" border-top ">
+            <footer class="container">
+    <main class="py-8 py-lg-4">
+        <h4 class="text-center fs-7 text-cus-400 m-0">©Vivre 2024 All right Reserved</h4>
+    </main>
+</footer>        </article>
+    </main>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+</html>
