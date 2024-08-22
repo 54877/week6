@@ -1,0 +1,21 @@
+.nav-posi-fixed {
+    transform: translate(-50%, 0%);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+.posi-type1{
+    transform: translate(0%, -50%);
+    position: absolute;
+}
+@media (max-width: 992px) {
+
+    .position-absolute-992{
+        transform: translate(0%, 100%);
+        width: 100%;
+        position: absolute;
+    }
+    .position-relative-992{
+        position:relative
+    }
+}
